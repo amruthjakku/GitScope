@@ -1,0 +1,101 @@
+{
+  "name": "@internlink/gitlab-wrapper",
+  "version": "1.0.0",
+  "description": "A comprehensive GitLab integration wrapper with OAuth, analytics, webhooks, and more",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "build": "echo \"No build step required for ES modules\"",
+    "example:basic": "node examples/basic-usage.js",
+    "example:express": "node examples/express-integration.js"
+  },
+  "keywords": [
+    "gitlab",
+    "oauth",
+    "api",
+    "git",
+    "repository",
+    "commits",
+    "analytics",
+    "webhooks",
+    "integration",
+    "wrapper"
+  ],
+  "author": "InternLink Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/internlink/gitlab-wrapper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/internlink/gitlab-wrapper/issues"
+  },
+  "homepage": "https://github.com/internlink/gitlab-wrapper#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "express": "^4.18.0",
+    "express-session": "^1.17.0"
+  },
+  "peerDependenciesMeta": {
+    "express": {
+      "optional": true
+    },
+    "express-session": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  },
+  "files": [
+    "index.js",
+    "auth/",
+    "api/",
+    "analytics/",
+    "cache/",
+    "config/",
+    "core/",
+    "errors/",
+    "types/",
+    "utils/",
+    "webhooks/",
+    "examples/",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    },
+    "./auth": {
+      "import": "./auth/GitLabOAuth.js"
+    },
+    "./api": {
+      "import": "./api/GitLabAPI.js"
+    },
+    "./analytics": {
+      "import": "./analytics/GitLabAnalytics.js"
+    },
+    "./cache": {
+      "import": "./cache/GitLabCache.js"
+    },
+    "./webhooks": {
+      "import": "./webhooks/GitLabWebhooks.js"
+    },
+    "./errors": {
+      "import": "./errors/GitLabErrors.js"
+    },
+    "./types": {
+      "import": "./types/index.js"
+    },
+    "./utils": {
+      "import": "./utils/helpers.js"
+    }
+  }
+}
