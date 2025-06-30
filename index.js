@@ -10,7 +10,7 @@
  * - Webhook handling
  * - Rate limiting and error handling
  * 
- * @author InternLink Team
+ * @author Jakku Amruth
  * @version 1.0.0
  */
 
