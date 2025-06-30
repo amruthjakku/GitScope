@@ -16,7 +16,7 @@ A comprehensive GitLab integration wrapper that provides OAuth authentication, r
 ## Installation
 
 ```bash
-npm install @internlink/gitlab-wrapper
+npm install gitlab-wrapper
 ```
 
 ## Quick Start
@@ -24,7 +24,7 @@ npm install @internlink/gitlab-wrapper
 ### Basic Setup
 
 ```javascript
-import { GitLabWrapper } from '@internlink/gitlab-wrapper';
+import { GitLabWrapper } from gitlab-wrapper';
 
 // Initialize the wrapper
 const gitlab = new GitLabWrapper({
@@ -47,7 +47,7 @@ console.log('Authenticated user:', result.user);
 ### Using with Existing Token
 
 ```javascript
-import { GitLabAPI } from '@internlink/gitlab-wrapper';
+import { GitLabAPI } from gitlab-wrapper';
 
 // Direct API access with existing token
 const api = new GitLabAPI('your-access-token', {
@@ -224,7 +224,7 @@ const result = await gitlab.handleWebhook(payload, headers);
 Provides comprehensive analytics and insights.
 
 ```javascript
-import { GitLabAnalytics } from '@internlink/gitlab-wrapper';
+import { GitLabAnalytics } from gitlab-wrapper';
 
 const analytics = new GitLabAnalytics(apiClient);
 
@@ -256,7 +256,7 @@ const comparison = await analytics.compareProjects([projectId1, projectId2]);
 Manages GitLab webhooks and event processing.
 
 ```javascript
-import { GitLabWebhooks } from '@internlink/gitlab-wrapper';
+import { GitLabWebhooks } from gitlab-wrapper';
 
 const webhooks = new GitLabWebhooks({
   secretToken: 'your-secret',
@@ -283,7 +283,7 @@ const result = await webhooks.handleWebhook(payload, headers);
 Provides caching functionality for API responses.
 
 ```javascript
-import { GitLabCache } from '@internlink/gitlab-wrapper';
+import { GitLabCache } from gitlab-wrapper';
 
 const cache = new GitLabCache({
   type: 'memory',
@@ -310,7 +310,7 @@ const stats = cache.getStats();
 
 ```javascript
 import express from 'express';
-import { GitLabWrapper } from '@internlink/gitlab-wrapper';
+import { GitLabWrapper } from gitlab-wrapper';
 
 const app = express();
 const gitlab = new GitLabWrapper({
@@ -361,7 +361,7 @@ app.get('/dashboard', async (req, res) => {
 ### Commit Analytics Dashboard
 
 ```javascript
-import { GitLabWrapper } from '@internlink/gitlab-wrapper';
+import { GitLabWrapper } from gitlab-wrapper';
 
 async function createCommitDashboard(accessToken) {
   const gitlab = new GitLabWrapper({
@@ -407,7 +407,7 @@ async function createCommitDashboard(accessToken) {
 
 ```javascript
 import express from 'express';
-import { GitLabWebhooks } from '@internlink/gitlab-wrapper';
+import { GitLabWebhooks } from gitlab-wrapper';
 
 const app = express();
 const webhooks = new GitLabWebhooks({
@@ -464,7 +464,7 @@ async function notifyReviewers(payload) {
 ### Repository Analysis
 
 ```javascript
-import { GitLabWrapper } from '@internlink/gitlab-wrapper';
+import { GitLabWrapper } from gitlab-wrapper';
 
 async function analyzeRepository(accessToken, projectId) {
   const gitlab = new GitLabWrapper({
@@ -538,7 +538,7 @@ import {
   GitLabAuthError, 
   GitLabPermissionError,
   GitLabRateLimitError 
-} from '@internlink/gitlab-wrapper';
+} from gitlab-wrapper';
 
 try {
   const repos = await gitlab.getRepositories();
@@ -590,7 +590,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For support and questions:
 - Create an issue on GitHub
-- Contact the InternLink team
+- Contact Author Jakku Amruth
 - Check the documentation and examples
 
 ## Changelog
