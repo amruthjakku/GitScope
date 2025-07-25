@@ -1,4 +1,4 @@
-# GitLab Wrapper - Implementation Summary
+# GitLab Wrapper - Implementation  Summary
 
 ## Overview
 
