@@ -11,7 +11,7 @@ A comprehensive GitLab integration wrapper that provides OAuth authentication, r
 - ⚡ **Rate Limiting** - Built-in rate limiting with request queuing
 - 💾 **Caching** - Intelligent caching for improved performance
 - 🛡️ **Error Handling** - Comprehensive error handling with retry logic
-- 📝 **TypeScript Support** - Full type definitions and runtime type checking
+
 
 ## Installation
 
